@@ -9,3 +9,77 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
+/* ====================common==================== */
+a {
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 0 16px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 24.5px;
+  background-color: black;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ====================header==================== */
+.header {
+  background: #f5d375;
+}
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+.header .body-header {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+.logo {
+  width: 100px;
+}
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  text-align: center; /* có cũng được, không có cũng được */
+  font-size: 1.6rem;
+  padding: 4px 21px;
+}
+.nav li.active a,
+.nav a:hover {
+  color: black;
+  /* font-weight: 600; */
+  text-shadow: 0.5px 0 0 currentColor;
+}
+.nav li.active a::after {
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 8px;
+  background: black;
+}
+.header .btn-sign-up {
+  min-width: 144px;
+}
+.header .action {
+  margin-left: 49px;
+}
